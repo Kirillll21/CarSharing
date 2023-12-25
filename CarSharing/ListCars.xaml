@@ -1,0 +1,74 @@
+﻿<Page x:Class="CarSharing.ListCars"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarSharing"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ListCars">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                HorizontalAlignment="Center" >
+            <TextBlock Text="Список автомобилей"
+                   
+                   FontSize="30"
+                   />
+            
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button Width="120"
+                    Height="30"
+                    Content="Назад"
+                    Name="btnBack"
+                    Click="btnBack_Click"/>
+        </StackPanel>
+
+        <DataGrid Name="DgrCars"
+              Grid.Row="1"
+              AutoGenerateColumns="False"
+              IsReadOnly="true">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Класс"
+                                Binding="{Binding Class}"
+                                Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Марка"
+                                Binding="{Binding Marka}"
+                                Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Модель"
+                                Binding="{Binding Model}"
+                                Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Гос. номер"
+                                Binding="{Binding GosNumb}"
+                                Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Кол-во дверей"
+                                Binding="{Binding CountDoor}"
+                                Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Тип коробки"
+                                Binding="{Binding TypeKP}"
+                                Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Тариф за сутки"
+                                Binding="{Binding ChargeForDay}"
+                                Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Сумма залога"
+                                Binding="{Binding SumZalog}"
+                                Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+
+
+        </StackPanel>
+    </Grid>
+</Page>
