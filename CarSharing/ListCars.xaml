@@ -48,7 +48,7 @@
                                 Binding="{Binding Model}"
                                 Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Гос. номер"
-                                Binding="{Binding GosNumb}"
+                                Binding="{Binding GosNum}"
                                 Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Кол-во дверей"
                                 Binding="{Binding CountDoor}"
@@ -67,6 +67,11 @@
         <StackPanel Grid.Row="2"
                 HorizontalAlignment="Right"
                 Orientation="Horizontal">
+            <Button Height="30"
+                    Width="120"
+                    Name="BtnAddCar"
+                    Click="BtnAddCar_Click"
+                    Content="Добавить"/>
 
 
         </StackPanel>

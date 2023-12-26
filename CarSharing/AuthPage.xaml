@@ -21,6 +21,17 @@
      FontSize="26"/>
         </StackPanel>
 
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center">
+            <Button Name="btnReg"
+                    Click="btnReg_Click"
+                    Content="Регистрация"
+                    Width="130"
+                    Height="30"
+                    Margin="0 0 20 0"/>
+
+        </StackPanel>
         <StackPanel Orientation="Vertical"
   HorizontalAlignment="Center"
   Grid.Row="1">

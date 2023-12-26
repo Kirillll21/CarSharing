@@ -48,6 +48,7 @@ namespace CarSharing
                                             "Вход",
                                             MessageBoxButton.OK,
                                             MessageBoxImage.Information);
+                            FrameApp.frmObj.Navigate(new ListCars());
                             break;
                         case 2:
                             MessageBox.Show("Добро пожаловать!",
@@ -64,6 +65,11 @@ namespace CarSharing
                 throw;
             }
             
+        }
+
+        private void btnReg_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.Navigate(new Registration());
         }
     }
 }

@@ -30,5 +30,10 @@ namespace CarSharing
         {
             FrameApp.frmObj.GoBack();
         }
+
+        private void BtnAddCar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
